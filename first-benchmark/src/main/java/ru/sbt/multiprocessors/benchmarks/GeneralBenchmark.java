@@ -44,4 +44,10 @@ public abstract class GeneralBenchmark {
     public void testMethod8() throws InterruptedException {
         theMethod();
     }
+
+    @Benchmark
+    @Threads(16)
+    public void testMethod16() throws InterruptedException {
+        theMethod();
+    }
 }
