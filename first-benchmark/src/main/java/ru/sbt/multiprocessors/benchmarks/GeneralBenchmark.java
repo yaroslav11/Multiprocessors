@@ -18,35 +18,41 @@ public abstract class GeneralBenchmark {
     }
 
     private void theMethod() throws InterruptedException {
-        IntStream.range(0, NUMBER_OF_REPEATS).forEach(i -> counter.getCounter());
+        IntStream.range(0, NUMBER_OF_REPEATS)
+                .forEach(i -> counter.getCounter());
     }
 
     @Benchmark
     @Threads(1)
+    @OperationsPerInvocation(NUMBER_OF_REPEATS)
     public void testMethod1() throws InterruptedException {
         theMethod();
     }
 
     @Benchmark
     @Threads(2)
+    @OperationsPerInvocation(NUMBER_OF_REPEATS)
     public void testMethod2() throws InterruptedException {
         theMethod();
     }
 
     @Benchmark
     @Threads(4)
+    @OperationsPerInvocation(NUMBER_OF_REPEATS)
     public void testMethod4() throws InterruptedException {
         theMethod();
     }
 
     @Benchmark
     @Threads(8)
+    @OperationsPerInvocation(NUMBER_OF_REPEATS)
     public void testMethod8() throws InterruptedException {
         theMethod();
     }
 
     @Benchmark
     @Threads(16)
+    @OperationsPerInvocation(NUMBER_OF_REPEATS)
     public void testMethod16() throws InterruptedException {
         theMethod();
     }
