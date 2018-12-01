@@ -12,8 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    private static final int WARMUP_ITERATIONS = 0;
-    private static final int MEASUREMENT_ITERATIONS = 1;
+    private static final int WARMUP_ITERATIONS = 1;
+    private static final int MEASUREMENT_ITERATIONS = 5;
     private static final int FORKS = 0;
     private static final List<Class> counters = new ArrayList<>();
 

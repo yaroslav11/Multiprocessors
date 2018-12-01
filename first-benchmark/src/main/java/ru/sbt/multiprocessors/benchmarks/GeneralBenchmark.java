@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 @BenchmarkMode({Mode.Throughput, Mode.AverageTime})
 @OutputTimeUnit(TimeUnit.SECONDS)
 public abstract class GeneralBenchmark {
-    private static final int NUMBER_OF_REPEATS = 1000;
+    private static final int NUMBER_OF_REPEATS = 1_000_000;
     private Counter counter;
 
     public GeneralBenchmark(Counter counter) {
