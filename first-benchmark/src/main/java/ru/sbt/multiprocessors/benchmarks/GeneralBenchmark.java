@@ -4,7 +4,6 @@ import org.openjdk.jmh.annotations.*;
 import ru.sbt.multiprocessors.counters.Counter;
 
 import java.util.concurrent.TimeUnit;
-import java.util.stream.IntStream;
 
 @State(Scope.Benchmark)
 @BenchmarkMode({Mode.Throughput, Mode.AverageTime})
@@ -18,8 +17,9 @@ public abstract class GeneralBenchmark {
     }
 
     private void theMethod() throws InterruptedException {
-        IntStream.range(0, NUMBER_OF_REPEATS)
-                .forEach(i -> counter.getCounter());
+        for (int i = 0; i++< NUMBER_OF_REPEATS; ) {
+            counter.getCounter();
+        }
     }
 
     @Benchmark
