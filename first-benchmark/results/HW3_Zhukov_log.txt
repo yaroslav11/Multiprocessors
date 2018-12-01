@@ -1,0 +1,1144 @@
+"C:\Program Files\Java\jdk1.8.0_162\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_162\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_162\jre\lib\rt.jar;C:\Users\Zhukov1-YO\Desktop\first-benchmark\first-benchmark\target\classes;C:\Users\Zhukov1-YO\.m2\repository\org\openjdk\jmh\jmh-core\1.21\jmh-core-1.21.jar;C:\Users\Zhukov1-YO\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\Zhukov1-YO\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\Zhukov1-YO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;C:\Users\Zhukov1-YO\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Zhukov1-YO\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Zhukov1-YO\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar" ru.sbt.multiprocessors.benchmarks.Main
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod1
+
+# Run progress: 0,00% complete, ETA 00:40:00
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 147965,379 ops/s
+Iteration   1: 150266,859 ops/s
+Iteration   2: 153459,552 ops/s
+Iteration   3: 153329,695 ops/s
+Iteration   4: 153410,394 ops/s
+Iteration   5: 153695,472 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod1":
+  152832,394 ±(99.9%) 5547,331 ops/s [Average]
+  (min, avg, max) = (150266,859, 152832,394, 153695,472), stdev = 1440,624
+  CI (99.9%): [147285,064, 158379,725] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod16
+
+# Run progress: 2,50% complete, ETA 00:39:05
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 37462,551 ops/s
+Iteration   1: 37038,521 ops/s
+Iteration   2: 36764,281 ops/s
+Iteration   3: 36998,971 ops/s
+Iteration   4: 36979,502 ops/s
+Iteration   5: 37013,066 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod16":
+  36958,868 ±(99.9%) 426,971 ops/s [Average]
+  (min, avg, max) = (36764,281, 36958,868, 37038,521), stdev = 110,883
+  CI (99.9%): [36531,897, 37385,840] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod2
+
+# Run progress: 5,00% complete, ETA 00:38:30
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 52607,606 ops/s
+Iteration   1: 38816,732 ops/s
+Iteration   2: 38104,519 ops/s
+Iteration   3: 37880,032 ops/s
+Iteration   4: 37881,186 ops/s
+Iteration   5: 38022,177 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod2":
+  38140,929 ±(99.9%) 1500,852 ops/s [Average]
+  (min, avg, max) = (37880,032, 38140,929, 38816,732), stdev = 389,766
+  CI (99.9%): [36640,077, 39641,781] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod4
+
+# Run progress: 7,50% complete, ETA 00:37:19
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 36737,841 ops/s
+Iteration   1: 36658,251 ops/s
+Iteration   2: 37129,107 ops/s
+Iteration   3: 38146,231 ops/s
+Iteration   4: 37917,732 ops/s
+Iteration   5: 37906,582 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod4":
+  37551,581 ±(99.9%) 2427,910 ops/s [Average]
+  (min, avg, max) = (36658,251, 37551,581, 38146,231), stdev = 630,520
+  CI (99.9%): [35123,671, 39979,490] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod8
+
+# Run progress: 10,00% complete, ETA 00:36:15
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 38898,681 ops/s
+Iteration   1: 37330,158 ops/s
+Iteration   2: 36723,418 ops/s
+Iteration   3: 37760,347 ops/s
+Iteration   4: 37413,192 ops/s
+Iteration   5: 37453,628 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod8":
+  37336,149 ±(99.9%) 1460,147 ops/s [Average]
+  (min, avg, max) = (36723,418, 37336,149, 37760,347), stdev = 379,195
+  CI (99.9%): [35876,002, 38796,295] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod1
+
+# Run progress: 12,50% complete, ETA 00:35:14
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 123780,327 ops/s
+Iteration   1: 123165,676 ops/s
+Iteration   2: 124111,491 ops/s
+Iteration   3: 123667,288 ops/s
+Iteration   4: 123880,729 ops/s
+Iteration   5: 123969,545 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod1":
+  123758,946 ±(99.9%) 1419,839 ops/s [Average]
+  (min, avg, max) = (123165,676, 123758,946, 124111,491), stdev = 368,728
+  CI (99.9%): [122339,106, 125178,785] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod16
+
+# Run progress: 15,00% complete, ETA 00:34:11
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 7825,788 ops/s
+Iteration   1: 7825,953 ops/s
+Iteration   2: 7840,308 ops/s
+Iteration   3: 7459,298 ops/s
+Iteration   4: 9495,767 ops/s
+Iteration   5: 9210,912 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod16":
+  8366,448 ±(99.9%) 3539,851 ops/s [Average]
+  (min, avg, max) = (7459,298, 8366,448, 9495,767), stdev = 919,288
+  CI (99.9%): [4826,597, 11906,298] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod2
+
+# Run progress: 17,50% complete, ETA 00:33:16
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 18693,039 ops/s
+Iteration   1: 18559,206 ops/s
+Iteration   2: 18417,269 ops/s
+Iteration   3: 18611,107 ops/s
+Iteration   4: 18585,763 ops/s
+Iteration   5: 18639,015 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod2":
+  18562,472 ±(99.9%) 332,703 ops/s [Average]
+  (min, avg, max) = (18417,269, 18562,472, 18639,015), stdev = 86,402
+  CI (99.9%): [18229,769, 18895,175] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod4
+
+# Run progress: 20,00% complete, ETA 00:32:14
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 12326,149 ops/s
+Iteration   1: 12288,293 ops/s
+Iteration   2: 12384,804 ops/s
+Iteration   3: 13825,263 ops/s
+Iteration   4: 15206,201 ops/s
+Iteration   5: 15307,886 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod4":
+  13802,489 ±(99.9%) 5626,345 ops/s [Average]
+  (min, avg, max) = (12288,293, 13802,489, 15307,886), stdev = 1461,144
+  CI (99.9%): [8176,144, 19428,834] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod8
+
+# Run progress: 22,50% complete, ETA 00:31:13
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 8933,831 ops/s
+Iteration   1: 9194,245 ops/s
+Iteration   2: 9204,268 ops/s
+Iteration   3: 9212,197 ops/s
+Iteration   4: 8929,361 ops/s
+Iteration   5: 8707,818 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod8":
+  9049,578 ±(99.9%) 866,511 ops/s [Average]
+  (min, avg, max) = (8707,818, 9049,578, 9212,197), stdev = 225,030
+  CI (99.9%): [8183,066, 9916,089] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod1
+
+# Run progress: 25,00% complete, ETA 00:30:12
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 52348,278 ops/s
+Iteration   1: 52464,324 ops/s
+Iteration   2: 52683,843 ops/s
+Iteration   3: 52625,285 ops/s
+Iteration   4: 52486,445 ops/s
+Iteration   5: 52663,961 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod1":
+  52584,772 ±(99.9%) 394,118 ops/s [Average]
+  (min, avg, max) = (52464,324, 52584,772, 52683,843), stdev = 102,351
+  CI (99.9%): [52190,653, 52978,890] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod16
+
+# Run progress: 27,50% complete, ETA 00:29:11
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 26553,480 ops/s
+Iteration   1: 26189,696 ops/s
+Iteration   2: 26924,370 ops/s
+Iteration   3: 26970,431 ops/s
+Iteration   4: 26955,977 ops/s
+Iteration   5: 26958,933 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod16":
+  26799,881 ±(99.9%) 1315,115 ops/s [Average]
+  (min, avg, max) = (26189,696, 26799,881, 26970,431), stdev = 341,531
+  CI (99.9%): [25484,766, 28114,996] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod2
+
+# Run progress: 30,00% complete, ETA 00:28:10
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 22336,367 ops/s
+Iteration   1: 22443,054 ops/s
+Iteration   2: 22689,905 ops/s
+Iteration   3: 22412,084 ops/s
+Iteration   4: 22482,045 ops/s
+Iteration   5: 22478,117 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod2":
+  22501,041 ±(99.9%) 421,077 ops/s [Average]
+  (min, avg, max) = (22412,084, 22501,041, 22689,905), stdev = 109,352
+  CI (99.9%): [22079,964, 22922,117] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod4
+
+# Run progress: 32,50% complete, ETA 00:27:09
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 28547,982 ops/s
+Iteration   1: 28908,127 ops/s
+Iteration   2: 30352,170 ops/s
+Iteration   3: 29583,953 ops/s
+Iteration   4: 28270,068 ops/s
+Iteration   5: 29647,678 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod4":
+  29352,399 ±(99.9%) 3049,777 ops/s [Average]
+  (min, avg, max) = (28270,068, 29352,399, 30352,170), stdev = 792,018
+  CI (99.9%): [26302,622, 32402,177] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod8
+
+# Run progress: 35,00% complete, ETA 00:26:08
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 26598,624 ops/s
+Iteration   1: 26411,240 ops/s
+Iteration   2: 27158,484 ops/s
+Iteration   3: 27132,284 ops/s
+Iteration   4: 27148,903 ops/s
+Iteration   5: 27160,346 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod8":
+  27002,252 ±(99.9%) 1272,916 ops/s [Average]
+  (min, avg, max) = (26411,240, 27002,252, 27160,346), stdev = 330,572
+  CI (99.9%): [25729,335, 28275,168] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod1
+
+# Run progress: 37,50% complete, ETA 00:25:07
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 126613,085 ops/s
+Iteration   1: 126636,796 ops/s
+Iteration   2: 127183,149 ops/s
+Iteration   3: 127103,090 ops/s
+Iteration   4: 126777,730 ops/s
+Iteration   5: 127709,971 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod1":
+  127082,147 ±(99.9%) 1606,012 ops/s [Average]
+  (min, avg, max) = (126636,796, 127082,147, 127709,971), stdev = 417,076
+  CI (99.9%): [125476,136, 128688,159] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod16
+
+# Run progress: 40,00% complete, ETA 00:24:06
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 5356,585 ops/s
+Iteration   1: 5325,562 ops/s
+Iteration   2: 5356,221 ops/s
+Iteration   3: 5473,449 ops/s
+Iteration   4: 5363,157 ops/s
+Iteration   5: 5359,439 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod16":
+  5375,566 ±(99.9%) 218,419 ops/s [Average]
+  (min, avg, max) = (5325,562, 5375,566, 5473,449), stdev = 56,723
+  CI (99.9%): [5157,147, 5593,985] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod2
+
+# Run progress: 42,50% complete, ETA 00:23:06
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 5226,683 ops/s
+Iteration   1: 5152,494 ops/s
+Iteration   2: 5129,323 ops/s
+Iteration   3: 5140,643 ops/s
+Iteration   4: 5067,617 ops/s
+Iteration   5: 5037,996 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod2":
+  5105,614 ±(99.9%) 192,559 ops/s [Average]
+  (min, avg, max) = (5037,996, 5105,614, 5152,494), stdev = 50,007
+  CI (99.9%): [4913,055, 5298,174] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod4
+
+# Run progress: 45,00% complete, ETA 00:22:05
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 5415,868 ops/s
+Iteration   1: 5421,101 ops/s
+Iteration   2: 5481,625 ops/s
+Iteration   3: 5517,845 ops/s
+Iteration   4: 5539,884 ops/s
+Iteration   5: 5476,039 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod4":
+  5487,299 ±(99.9%) 174,763 ops/s [Average]
+  (min, avg, max) = (5421,101, 5487,299, 5539,884), stdev = 45,386
+  CI (99.9%): [5312,535, 5662,062] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod8
+
+# Run progress: 47,50% complete, ETA 00:21:05
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 5410,877 ops/s
+Iteration   1: 5446,297 ops/s
+Iteration   2: 5205,364 ops/s
+Iteration   3: 4987,970 ops/s
+Iteration   4: 4988,446 ops/s
+Iteration   5: 4985,038 ops/s
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod8":
+  5122,623 ±(99.9%) 786,030 ops/s [Average]
+  (min, avg, max) = (4985,038, 5122,623, 5446,297), stdev = 204,130
+  CI (99.9%): [4336,592, 5908,653] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod1
+
+# Run progress: 50,00% complete, ETA 00:20:04
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod1":
+  ≈ 10⁻⁵ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod16
+
+# Run progress: 52,50% complete, ETA 00:19:04
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 0,001 ±(99.9%) 0,001 s/op
+Iteration   1: 0,001 ±(99.9%) 0,001 s/op
+Iteration   2: ≈ 10⁻³ s/op
+Iteration   3: ≈ 10⁻³ s/op
+Iteration   4: ≈ 10⁻³ s/op
+Iteration   5: ≈ 10⁻³ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod16":
+  ≈ 10⁻³ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod2
+
+# Run progress: 55,00% complete, ETA 00:18:05
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod2":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod4
+
+# Run progress: 57,50% complete, ETA 00:17:04
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod4":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod8
+
+# Run progress: 60,00% complete, ETA 00:16:04
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.AtomicCounterBenchmark.testMethod8":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod1
+
+# Run progress: 62,50% complete, ETA 00:15:03
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod1":
+  ≈ 10⁻⁵ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod16
+
+# Run progress: 65,00% complete, ETA 00:14:03
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 0,002 ±(99.9%) 0,001 s/op
+Iteration   1: 0,002 ±(99.9%) 0,001 s/op
+Iteration   2: 0,002 ±(99.9%) 0,001 s/op
+Iteration   3: 0,002 ±(99.9%) 0,001 s/op
+Iteration   4: 0,002 ±(99.9%) 0,001 s/op
+Iteration   5: 0,002 ±(99.9%) 0,001 s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod16":
+  0,002 ±(99.9%) 0,001 s/op [Average]
+  (min, avg, max) = (0,002, 0,002, 0,002), stdev = 0,001
+  CI (99.9%): [0,002, 0,003] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod2
+
+# Run progress: 67,50% complete, ETA 00:13:03
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod2":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod4
+
+# Run progress: 70,00% complete, ETA 00:12:03
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻³ s/op
+Iteration   3: ≈ 10⁻³ s/op
+Iteration   4: ≈ 10⁻³ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod4":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod8
+
+# Run progress: 72,50% complete, ETA 00:11:03
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 0,001 ±(99.9%) 0,001 s/op
+Iteration   1: 0,001 ±(99.9%) 0,001 s/op
+Iteration   2: 0,001 ±(99.9%) 0,001 s/op
+Iteration   3: 0,001 ±(99.9%) 0,001 s/op
+Iteration   4: 0,001 ±(99.9%) 0,001 s/op
+Iteration   5: 0,001 ±(99.9%) 0,001 s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.CompareAndSwapCounterBenchmark.testMethod8":
+  0,001 ±(99.9%) 0,001 s/op [Average]
+  (min, avg, max) = (0,001, 0,001, 0,001), stdev = 0,001
+  CI (99.9%): [0,001, 0,001] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod1
+
+# Run progress: 75,00% complete, ETA 00:10:02
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod1":
+  ≈ 10⁻⁵ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod16
+
+# Run progress: 77,50% complete, ETA 00:09:02
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 0,001 ±(99.9%) 0,001 s/op
+Iteration   1: 0,001 ±(99.9%) 0,001 s/op
+Iteration   2: 0,001 ±(99.9%) 0,001 s/op
+Iteration   3: 0,001 ±(99.9%) 0,001 s/op
+Iteration   4: 0,001 ±(99.9%) 0,001 s/op
+Iteration   5: 0,001 ±(99.9%) 0,001 s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod16":
+  0,001 ±(99.9%) 0,001 s/op [Average]
+  (min, avg, max) = (0,001, 0,001, 0,001), stdev = 0,001
+  CI (99.9%): [0,001, 0,001] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod2
+
+# Run progress: 80,00% complete, ETA 00:08:02
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod2":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod4
+
+# Run progress: 82,50% complete, ETA 00:07:01
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod4":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod8
+
+# Run progress: 85,00% complete, ETA 00:06:01
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   1: ≈ 10⁻⁴ s/op
+Iteration   2: ≈ 10⁻⁴ s/op
+Iteration   3: ≈ 10⁻⁴ s/op
+Iteration   4: ≈ 10⁻⁴ s/op
+Iteration   5: ≈ 10⁻⁴ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.ReentrantCounterBenchmark.testMethod8":
+  ≈ 10⁻⁴ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod1
+
+# Run progress: 87,50% complete, ETA 00:05:01
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod1":
+  ≈ 10⁻⁵ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 16 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod16
+
+# Run progress: 90,00% complete, ETA 00:04:01
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 0,003 ±(99.9%) 0,001 s/op
+Iteration   1: 0,003 ±(99.9%) 0,001 s/op
+Iteration   2: 0,003 ±(99.9%) 0,001 s/op
+Iteration   3: 0,003 ±(99.9%) 0,001 s/op
+Iteration   4: 0,003 ±(99.9%) 0,001 s/op
+Iteration   5: 0,003 ±(99.9%) 0,001 s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod16":
+  0,003 ±(99.9%) 0,001 s/op [Average]
+  (min, avg, max) = (0,003, 0,003, 0,003), stdev = 0,001
+  CI (99.9%): [0,003, 0,003] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod2
+
+# Run progress: 92,50% complete, ETA 00:03:00
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: ≈ 10⁻³ s/op
+Iteration   1: ≈ 10⁻³ s/op
+Iteration   2: ≈ 10⁻³ s/op
+Iteration   3: ≈ 10⁻³ s/op
+Iteration   4: ≈ 10⁻³ s/op
+Iteration   5: ≈ 10⁻³ s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod2":
+  ≈ 10⁻³ s/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod4
+
+# Run progress: 95,00% complete, ETA 00:02:00
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 0,001 ±(99.9%) 0,001 s/op
+Iteration   1: 0,001 ±(99.9%) 0,001 s/op
+Iteration   2: 0,001 ±(99.9%) 0,001 s/op
+Iteration   3: 0,001 ±(99.9%) 0,001 s/op
+Iteration   4: 0,001 ±(99.9%) 0,001 s/op
+Iteration   5: 0,001 ±(99.9%) 0,001 s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod4":
+  0,001 ±(99.9%) 0,001 s/op [Average]
+  (min, avg, max) = (0,001, 0,001, 0,001), stdev = 0,001
+  CI (99.9%): [0,001, 0,001] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_162, Java HotSpot(TM) 64-Bit Server VM, 25.162-b12
+# VM invoker: C:\Program Files\Java\jdk1.8.0_162\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\lib\idea_rt.jar=52280:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3\bin -Dfile.encoding=UTF-8
+# Warmup: 1 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod8
+
+# Run progress: 97,50% complete, ETA 00:01:00
+# Fork: N/A, test runs in the host VM
+# *** WARNING: Non-forked runs may silently omit JVM options, mess up profilers, disable compiler hints, etc. ***
+# *** WARNING: Use non-forked runs only for debugging purposes, not for actual performance runs. ***
+# Warmup Iteration   1: 0,002 ±(99.9%) 0,001 s/op
+Iteration   1: 0,002 ±(99.9%) 0,001 s/op
+Iteration   2: 0,001 ±(99.9%) 0,001 s/op
+Iteration   3: 0,001 ±(99.9%) 0,001 s/op
+Iteration   4: 0,002 ±(99.9%) 0,001 s/op
+Iteration   5: 0,002 ±(99.9%) 0,001 s/op
+
+Result "ru.sbt.multiprocessors.benchmarks.impl.SynchronizedCounterBenchmark.testMethod8":
+  0,002 ±(99.9%) 0,001 s/op [Average]
+  (min, avg, max) = (0,001, 0,002, 0,002), stdev = 0,001
+  CI (99.9%): [0,001, 0,002] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:40:09
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                     Mode  Cnt       Score      Error  Units
+AtomicCounterBenchmark.testMethod1           thrpt    5  152832,394 ± 5547,331  ops/s
+AtomicCounterBenchmark.testMethod16          thrpt    5   36958,868 ±  426,971  ops/s
+AtomicCounterBenchmark.testMethod2           thrpt    5   38140,929 ± 1500,852  ops/s
+AtomicCounterBenchmark.testMethod4           thrpt    5   37551,581 ± 2427,910  ops/s
+AtomicCounterBenchmark.testMethod8           thrpt    5   37336,149 ± 1460,147  ops/s
+CompareAndSwapCounterBenchmark.testMethod1   thrpt    5  123758,946 ± 1419,839  ops/s
+CompareAndSwapCounterBenchmark.testMethod16  thrpt    5    8366,448 ± 3539,851  ops/s
+CompareAndSwapCounterBenchmark.testMethod2   thrpt    5   18562,472 ±  332,703  ops/s
+CompareAndSwapCounterBenchmark.testMethod4   thrpt    5   13802,489 ± 5626,345  ops/s
+CompareAndSwapCounterBenchmark.testMethod8   thrpt    5    9049,578 ±  866,511  ops/s
+ReentrantCounterBenchmark.testMethod1        thrpt    5   52584,772 ±  394,118  ops/s
+ReentrantCounterBenchmark.testMethod16       thrpt    5   26799,881 ± 1315,115  ops/s
+ReentrantCounterBenchmark.testMethod2        thrpt    5   22501,041 ±  421,077  ops/s
+ReentrantCounterBenchmark.testMethod4        thrpt    5   29352,399 ± 3049,777  ops/s
+ReentrantCounterBenchmark.testMethod8        thrpt    5   27002,252 ± 1272,916  ops/s
+SynchronizedCounterBenchmark.testMethod1     thrpt    5  127082,147 ± 1606,012  ops/s
+SynchronizedCounterBenchmark.testMethod16    thrpt    5    5375,566 ±  218,419  ops/s
+SynchronizedCounterBenchmark.testMethod2     thrpt    5    5105,614 ±  192,559  ops/s
+SynchronizedCounterBenchmark.testMethod4     thrpt    5    5487,299 ±  174,763  ops/s
+SynchronizedCounterBenchmark.testMethod8     thrpt    5    5122,623 ±  786,030  ops/s
+AtomicCounterBenchmark.testMethod1            avgt    5      ≈ 10⁻⁵              s/op
+AtomicCounterBenchmark.testMethod16           avgt    5      ≈ 10⁻³              s/op
+AtomicCounterBenchmark.testMethod2            avgt    5      ≈ 10⁻⁴              s/op
+AtomicCounterBenchmark.testMethod4            avgt    5      ≈ 10⁻⁴              s/op
+AtomicCounterBenchmark.testMethod8            avgt    5      ≈ 10⁻⁴              s/op
+CompareAndSwapCounterBenchmark.testMethod1    avgt    5      ≈ 10⁻⁵              s/op
+CompareAndSwapCounterBenchmark.testMethod16   avgt    5       0,002 ±    0,001   s/op
+CompareAndSwapCounterBenchmark.testMethod2    avgt    5      ≈ 10⁻⁴              s/op
+CompareAndSwapCounterBenchmark.testMethod4    avgt    5      ≈ 10⁻⁴              s/op
+CompareAndSwapCounterBenchmark.testMethod8    avgt    5       0,001 ±    0,001   s/op
+ReentrantCounterBenchmark.testMethod1         avgt    5      ≈ 10⁻⁵              s/op
+ReentrantCounterBenchmark.testMethod16        avgt    5       0,001 ±    0,001   s/op
+ReentrantCounterBenchmark.testMethod2         avgt    5      ≈ 10⁻⁴              s/op
+ReentrantCounterBenchmark.testMethod4         avgt    5      ≈ 10⁻⁴              s/op
+ReentrantCounterBenchmark.testMethod8         avgt    5      ≈ 10⁻⁴              s/op
+SynchronizedCounterBenchmark.testMethod1      avgt    5      ≈ 10⁻⁵              s/op
+SynchronizedCounterBenchmark.testMethod16     avgt    5       0,003 ±    0,001   s/op
+SynchronizedCounterBenchmark.testMethod2      avgt    5      ≈ 10⁻³              s/op
+SynchronizedCounterBenchmark.testMethod4      avgt    5       0,001 ±    0,001   s/op
+SynchronizedCounterBenchmark.testMethod8      avgt    5       0,002 ±    0,001   s/op
+
+Process finished with exit code 0
